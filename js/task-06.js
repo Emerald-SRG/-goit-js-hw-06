@@ -4,7 +4,7 @@ txtInput.addEventListener("blur", checkNum);
 
 function checkNum() {
     if (txtInput.value.length === txtInputNumbers) {
-        return txtInput.classList.add("valid");
+        return txtInput.classList.add("valid"), txtInput.classList.remove("invalid");
     }
     if (txtInput.value.length === 0) {
         return txtInput.removeAttribute("class");
